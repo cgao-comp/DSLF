@@ -9,7 +9,7 @@ In our study, we employed two distinct models for graph-level and edge-level gen
    - These are LSTM (Long Short-Term Memory) layers designed for sequence data processing.
    - Both models are configured with a `hidden_size` of 2 and 3 `num_layers`.
    - They are bidirectional, enhancing the capability to capture dependencies in both forward and backward directions.
-   - Input features size is set to 15 for both models. Here, 15 includes 8 constructed dynamic propagation features (H~1-H~8 in paper) and 7 user profiles (H~9-H~15), the verification status of a user is a binary variable, which takes 2 dimensions).
+   - Input features size is set to 15 for both models. Here, 15 includes 8 constructed dynamic propagation features (H~1~-H~8~ in paper) and 7 user profiles (H~9~-H~15~), the verification status of a user is a binary variable, which takes 2 dimensions).
    - These models play a crucial role in understanding temporal dynamics in the data.
 
 2. **Attention_GCN1 and Attention_GCN2 (Self-loop Attention-based GCN):**
