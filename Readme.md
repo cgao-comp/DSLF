@@ -2,7 +2,7 @@
 
 The DSLF (Dual-channel Source Localization Framework) is designed for efficient source localization in multi-layer networks, particularly focusing on cross-platform data from Twitter and Weibo.  
 
-## Code and Data Availability:
+#### Code and Data Availability:
 
 - We have conducted these experiments on the server with Intel(R) Xeon(R) Gold 6326 CPU @ 2.90GHz and 188GB RAM. The integrated developing environment is PyTorch (the version of Torch is 1.12.0) on 3090Ti.
 - snapshot_newest.py is the entry point of the function program.
