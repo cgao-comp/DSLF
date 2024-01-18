@@ -1,6 +1,7 @@
 ### DSLF Model Architecture Overview
 
-The DSLF (Dual-channel Source Localization Framework) is designed for efficient source localization in multi-layer networks, particularly focusing on cross-platform data from Twitter and Weibo. The architecture comprises various neural network modules, each playing a crucial role in processing and analyzing propagation cascade data.
+The DSLF (Dual-channel Source Localization Framework) is designed for efficient source localization in multi-layer networks, particularly focusing on cross-platform data from Twitter and Weibo. The architecture comprises various neural network modules, each playing a crucial role in processing and analyzing propagation cascade data. We have conducted these experiments on the server with Intel(R) Xeon(R) Gold 6326 CPU @ 2.90GHz and 188GB RAM. The integrated developing environment is PyTorch (the version of Torch is 1.12.0) on 3090Ti.
+In our study, we employed two distinct models for graph-level and edge-level generation, detailed as follows:
 
 #### Key Components of DSLF:
 
