@@ -135,3 +135,11 @@ class EVAE(nn.Module):
             eps = Variable(torch.rand(z_lambda.size())).cuda()
             z = -torch.log(1 - eps) / z_lambda
         return z, z_lambda
+
+    def vae_loss_function(self, recon_x, x, z_lambda, coef, target_lambda = 1):
+        loss_bce = binary_cross_entropy_weight(recon_x, x)
+        kl_loss = torch.log(z_lambda / target_lambda) + (target_lambda / z_lambda) - 1
+        kl_loss = torch.sum(kl_loss)
+        kl_loss = kl_loss/ (z_lambda.size(0)*z_lambda.size(1)*z_lambda.size(2))
+        loss = loss_bce + coef * kl_loss
+        return loss
